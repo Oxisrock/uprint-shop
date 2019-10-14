@@ -1,0 +1,9 @@
+*
+   
+!modules/
+!modules/**
+modules/psaddonsconnect
+!themes/
+!themes/**
+
+!.gitignore
