@@ -1,15 +1,15 @@
 {shop_url}
 
-Hola {firstname} {lastname},
+Hi {firstname} {lastname},
 
-Gracias por su confianza y fidelidad.
+Thanks for your trust.
 
-Nos complace ofrecerle un descuento de un {amount}% en su próximo pedido. Esta oferta es solamente válida durante {days} días, ¡así que no espere más!
+We are pleased to offer you a discount of {amount}% off your next order. And this offer is valid for {days} days, so do not wait any longer!
 
-Aquí está su CÓDIGO DE CUPÓN DE DESCUENTO: {voucher_num}
+Here is your VOUCHER CODE: {voucher_num}
 
-Introduzca este código en su carrito de compra para obtener el descuento.
+Enter this code in your shopping cart to get the discount.
 
 [{shop_name}]({shop_url})
 
-Powered by [PrestaShop](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail=utm_campaign=footer_1-7)
+Powered by [PrestaShop](http://www.prestashop.com/)
