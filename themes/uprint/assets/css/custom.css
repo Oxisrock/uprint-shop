@@ -174,7 +174,17 @@ strong.nobold {
 .footer-container .h3, .footer-container #block_myaccount_infos .myaccount-title a, .footer-container .block-contact .block-contact-title, .linklist .blockcms-title a {
     color: #ff6600;
 }
-
+.block-contact-title, .blockcms-title, .myaccount-title, .myaccount-title a {
+    font-weight: 300;
+    font-size: 1rem;
+}
+.block-contact {
+    font-size: .9rem;
+    line-height: 1.9rem;
+}
+.gris p > a {
+    font-size: .75rem;
+}
 /*Productos*/
 .product-miniature .product-description {
     background-color: #373737!important;
