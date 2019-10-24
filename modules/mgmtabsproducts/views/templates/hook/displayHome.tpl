@@ -22,7 +22,7 @@
 <div class="col-md-9 col-xs-12">
 <div class="nav-tabs-ver-container-content">
 <div class="tab-content">
- <div class="tab-pane fade show active" id="home">
+ <div class="tab-pane show active" id="home">
     <div class="icon-cont grid-products">
             <a class="icon-products" href="productos/1" data-id="1">
                 <img class="" src="http://uprint.test/img/products/icons/icon-tarjetas-presentacion.jpg" alt="...">
