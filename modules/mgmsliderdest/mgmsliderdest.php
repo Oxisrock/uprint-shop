@@ -294,7 +294,11 @@ class mgmsliderdest extends Module implements WidgetInterface {
     }
     
     public function hookBackOfficeHeader() {
-        
+        //echo Tools::getValue('module_name') .'=='. $this->name;
+        //if (Tools::getValue('module_name') == $this->name) {
+            $this->context->controller->addJS('https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js');
+            $this->context->controller->addJS($this->local_path.'views/js/back.js');
+        //}
     }
 
     public function getData() {

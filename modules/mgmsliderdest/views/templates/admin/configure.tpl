@@ -66,4 +66,6 @@
 </div>
 <form id='form_delete' action="{$action_url}" method="post" enctype="multipart/form-data">
 	<input type="hidden" value="" name="id_delete" id="id_delete">
+	<input type="hidden" value="1" name="mgmd_delete">
+	<input type="hidden" value="1" name="{$generic_delete}" id="{$generic_delete}">
 </form>
