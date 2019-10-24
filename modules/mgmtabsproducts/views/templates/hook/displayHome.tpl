@@ -1,8 +1,8 @@
 {* {_PS_BASE_URL_}{__PS_BASE_URI__} *}
 
-<div class="container mt-2 mb-6">
+<div class="container mt-2 mb-6" id="navproducts">
   <div class="row">
-    <div class= "col-md-4" >
+    <div class= "col-md-3 col-sm-5" >
       <ul class="nav flex-column">
         <li class="nav-item">
           <a href="#corporate" class="nav-link active" data-toggle="tab">Papelería corporativa</a>
@@ -23,7 +23,7 @@
     </div>
 
     <!-- Tab panes -->
-    <div class= "col-md-8" >
+    <div class= "col-md-9 col-sm-7" >
       <div class="tab-content grid-products">
 
         <div class="tab-pane active" id="corporate">
