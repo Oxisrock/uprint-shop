@@ -1,1 +1,0 @@
-$('.nav.nav-tabs li.nav-item:nth-child(1) a').click();
