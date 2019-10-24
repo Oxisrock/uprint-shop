@@ -1,64 +1,53 @@
-.grid-products{
+#navproducts .grid-products{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
   grid-auto-rows: minmax(100px, auto);
 }
 
-.grid-products img {
+#navproducts .grid-products img {
   max-height: 132px;
+  transition: all ease .3s;
+}
+#navproducts .grid-products img:hover {
+  opacity: .8;
+  transition: all ease .3s;
+}
+#navproducts .grid-products a {
+  color: #ff6600;
+  transition: all ease .3s;
 } 
-/*
-.nav-tabs .nav-item {
+#navproducts .grid-products a:hover {
+  color: #444;
+  transition: all ease .3s;
+}
+
+#navproducts .nav-item {
+  border-bottom: 1px solid #d2d2d2;
+  border-top: 1px solid transparent;
   float: none;
   margin-bottom: -1px;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  position: relative;
 }
-ul.nav.nav-tabs {
-  background: #ff6600!important;
-  color: #fff!important;
+#navproducts .nav-item:hover {
+  background-color:  #f4f6f6 ;
+  border-top: 1px solid #d2d2d2;
 }
-.nav-tabs .nav-item.open .nav-link, .nav-tabs .nav-item.open .nav-link:focus, .nav-tabs .nav-item.open .nav-link:hover, .nav-tabs .nav-link.active, .nav-tabs .nav-link.active:focus, .nav-tabs .nav-link.active:hover {
-  background: #fff!important;
-  color: #ff6600!important;
+#navproducts .nav-item a{
+  font-size: 1.4rem;
+  font-weight: 300;
 }
-.nav-item .nav-link, .nav-item .nav-separtor {
-  color: #fff!important;
+#navproducts .nav-item .nav-link.active, .nav-item .nav-separtor.active {
+  color: #ff6600;
 }
-
-.primary-color {
-  color: #ff8000;
+#navproducts .nav-item .nav-link.active::after {
+  content: "\f054";
+  right: 0;
+  font-family: FontAwesome;
+  -webkit-transition: all ease .3s;
+  -o-transition: all ease .3s;
+  transition: all ease .3s;
+  position: absolute;
 }
-
-@media (min-width:992px) {
-  .nav-tabs-ver-container>.row {
-    overflow: hidden;
-  }
-
-  .nav-tabs-ver-container>.row>[class*=col-] {
-    margin-bottom: -99999px;
-    padding-bottom: 99999px;
-  }
-
-  .nav-tabs-ver-container .nav-tabs-ver {
-    margin-bottom: -99999px;
-    padding-bottom: 99999px;
-    position: relative;
-  }
-
-  .nav-tabs-ver-container .nav-tabs-ver:after {
-    content: "";
-    display: block;
-    width: 1px;
-    position: absolute;
-    z-index: 10;
-    box-shadow: -1px 0 1px 0 rgba(0, 0, 0, .3);
-    height: 100%;
-    top: 0;
-    right: 0;
-  }
-
-  .nav-tabs-ver-container-content {
-    padding-left: 0;
-    padding-right: 30px;
-  }
-}*/

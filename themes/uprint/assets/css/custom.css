@@ -132,6 +132,9 @@ h1,h2,h3,h4,h5,h6 {
 .mw-800 {
   max-width: 800px;
 }
+.primary-color {
+  color: #ff6600 !important;
+}
 span.lead {
     color: #7a7a7a;
     line-height: 1.8rem;
