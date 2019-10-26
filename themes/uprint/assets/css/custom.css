@@ -1,21 +1,22 @@
-/*Tipografía*/
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
-
-
-
 /*Generales*/
 body {
     font-family: 'Roboto', sans-serif !important;
 }
 p {
     font-weight: 300 !important;
+    font-size: 17.6px;
     font-size: 1.1rem;
+    line-height: 28.8px;
     line-height: 1.8rem;
 }
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Open Sans', sans-serif;
     font-weight: normal !important;
+}
+h2.primary-color {
+  font-size: calc(1.20465rem + 0.74419vw);
 }
 .breadcrumb {
     display: none;
@@ -35,100 +36,92 @@ h1,h2,h3,h4,h5,h6 {
 .no-m {
   margin: 0!important;
 }
-
 .no-mt {
   margin-top: 0!important;
 }
-
 .no-mb {
   margin-bottom: 0!important;
 }
-
 .no-mr {
   margin-right: 0!important;
 }
-
 .no-p {
   padding: 0!important;
 }
-
 .no-pt {
   padding-top: 0!important;
 }
-
 .no-pl {
   padding-left: 0!important;
 }
-
 .no-pr {
   padding-right: 0!important;
 }
-
 .mb-1 {
   margin-bottom: 10px!important;
+  margin-bottom: 16px!important;
   margin-bottom: 1rem!important;
 }
-
 .mb-2 {
   margin-bottom: 20px!important;
+  margin-bottom: 32px!important;
   margin-bottom: 2rem!important;
 }
-
 .mb-3 {
   margin-bottom: 30px!important;
+  margin-bottom: 48px!important;
   margin-bottom: 3rem!important;
 }
-
 .mb-4 {
   margin-bottom: 40px!important;
+  margin-bottom: 64px!important;
   margin-bottom: 4rem!important;
 }
-
 .mb-6 {
   margin-bottom: 60px!important;
+  margin-bottom: 96px!important;
   margin-bottom: 6rem!important;
 }
-
 .mt-1 {
   margin-top: 10px!important;
+  margin-top: 16px!important;
   margin-top: 1rem!important;
 }
-
 .mt-2 {
   margin-top: 20px!important;
+  margin-top: 32px!important;
   margin-top: 2rem!important;
 }
-
 .mt-4 {
   margin-top: 40px!important;
+  margin-top: 64px!important;
   margin-top: 4rem!important;
 }
-
 .mt-6 {
   margin-top: 60px!important;
+  margin-top: 96px!important;
   margin-top: 6rem!important;
 }
-
 .mr-1 {
   margin-right: 10px!important;
+  margin-right: 16px!important;
   margin-right: 1rem!important;
 }
-
 .mr-2 {
   margin-right: 20px!important;
+  margin-right: 32px!important;
   margin-right: 2rem!important;
 }
-
 .mr-4 {
   margin-right: 40px!important;
+  margin-right: 64px!important;
   margin-right: 4rem!important;
 }
-
 .mr-6 {
   margin-right: 60px!important;
+  margin-right: 96px!important;
   margin-right: 6rem!important;
 }
-
 .mw-800 {
   max-width: 800px;
 }
@@ -137,6 +130,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 span.lead {
     color: #7a7a7a;
+    line-height: 28.8px;
     line-height: 1.8rem;
 }
 strong.nobold {
@@ -145,7 +139,6 @@ strong.nobold {
 #wrapper {
     background-color: #ffffff;
 }
-
 /*Detalle de producto*/
 #accordion .btn-link {
     width: 100%;
@@ -154,22 +147,28 @@ strong.nobold {
     color: #ff6600
 }
 .form-control:focus, .input-group.focus {
+    outline: 3px solid #ff6600;
     outline: .1875rem solid #ff6600;
 }
 .product-add-to-cart {
     display: none;
 }
 .product-prices {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .current-price {
+    font-size: 32px;
     font-size: 2rem;
 }
 .product-prices .tax-shipping-delivery-label {
+    font-size: 16px;
     font-size: 1rem;
 }
-
 /*Footer*/
 .footer-container {
     background: #f1f1f1;
@@ -179,13 +178,17 @@ strong.nobold {
 }
 .block-contact-title, .blockcms-title, .myaccount-title, .myaccount-title a {
     font-weight: 300;
+    font-size: 16px;
     font-size: 1rem;
 }
 .block-contact {
+    font-size: 14.4px;
     font-size: .9rem;
+    line-height: 30.4px;
     line-height: 1.9rem;
 }
 .gris p > a {
+    font-size: 12px;
     font-size: .75rem;
 }
 /*Productos*/
@@ -203,16 +206,34 @@ strong.nobold {
 }
 .h2.h2.products-section-title.text-uppercase {    
     color: #ff6600!important;
+    font-size: 25.6px;
     font-size: 1.6rem;
 }
-
+/*Productos destacados*/
+.slick-slide > div {
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 /*Ventajas*/
 #services {
     background-color: #f9f9f9;
+    margin-top: 48px;
     margin-top: 3rem;
+    padding-top: 48px;
     padding-top: 3rem;
 }
-
-#services h2.primary-color {
-    font-size: 1.8rem;
+/*Mediaquery*/
+@media screen and (min-width: 1280px){
+    h2.primary-color{
+        font-size: 28.8px;
+        font-size: 1.8rem;
+    }
+}
+@media screen and (max-width: 420px){
+    h2.primary-color{
+        font-size: 22.4px;
+        font-size: 1.4rem;
+    }
 }

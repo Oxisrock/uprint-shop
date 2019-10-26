@@ -23,9 +23,10 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 <section class="featured-products clearfix">
-  <h2 class="h2 products-section-title text-uppercase">
+  <h2 class="h2 primary-color text-center">
     {l s='Popular Products' d='Shop.Theme.Catalog'}
   </h2>
+  <br>
   <div id="products-slider" class="products">
     {foreach from=$products item="product"}
       {include file="catalog/_partials/miniatures/product.tpl" product=$product}
