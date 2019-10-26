@@ -1,8 +1,8 @@
 {* {$urls.base_url} *}
 
-<div class="container mt-2 mb-6" id="navproducts">
+<div class="container" id="navproducts">
   <div class="row">
-    <div class= "col-md-3 col-sm-5" >
+    <div class= "col-md-3 col-sm-5 .d-none .d-sm-block" >
       <ul class="nav flex-column">
         <li class="nav-item">
           <a href="#corporate" class="nav-link active" data-toggle="tab">Papelería corporativa</a>
@@ -106,10 +106,6 @@
 
         <div class="tab-pane fade" id="events">
           <div class="icon-cont grid-products">
-            <a class="icon-products" href="productos/9" data-id="9">
-              <img class="" src="{$urls.base_url}/img/products/icons/icon-flyers.jpg" alt="...">
-              <center>Volantes</center>
-            </a>
             <a class="icon-products" href="productos/11" data-id="11">
               <img class="" src="{$urls.base_url}/img/products/icons/icon-catalogos.jpg" alt="...">
               <center>Catálogos y revistas</center>
@@ -117,6 +113,10 @@
             <a class="icon-products" href="productos/12" data-id="12">
               <img class="" src="{$urls.base_url}/img/products/icons/icon-afiches.jpg" alt="...">
               <center>Afiches y carteles</center>
+            </a>
+            <a class="icon-products" href="productos/9" data-id="9">
+              <img class="" src="{$urls.base_url}/img/products/icons/icon-flyers.jpg" alt="...">
+              <center>Volantes</center>
             </a>
             <a class="icon-products" href="productos/13" data-id="13">
               <img class="" src="{$urls.base_url}/img/products/icons/icon-troqueladas.jpg" alt="...">
