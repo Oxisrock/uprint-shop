@@ -140,6 +140,9 @@ strong.nobold {
   background-color: #ffffff;
 }
 /*Header*/
+#header a {
+    color: #999;
+  }
 #header .header-nav{
     margin-bottom: 10px;
   }
@@ -160,6 +163,7 @@ strong.nobold {
       transition: all .3s;
     }
 #header .top-menu a[data-depth="1"], #header .top-menu a[data-depth="2"] {
+    color: #666;
     font-size: calc(0.70233rem + 0.37209vw);
     font-weight: 400;
     padding: 0 10px 10px 0;
@@ -169,6 +173,13 @@ strong.nobold {
     -o-transition: all .3s;
     transition: all .3s;
   }
+#header .top-menu a[data-depth="1"]:hover, #header .top-menu a[data-depth="2"]:hover {
+      color: #ff6600;
+      text-decoration: none;
+      -webkit-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s;
+    }
 #header .header-top {
     background-color: #ff6600;
     padding-bottom: 4px;
