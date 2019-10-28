@@ -5,15 +5,15 @@ body {
     font-family: 'Roboto', sans-serif !important;
 }
 p {
-    font-weight: 300 !important;
-    font-size: 17.6px;
-    font-size: 1.1rem;
-    line-height: 28.8px;
-    line-height: 1.8rem;
+  font-size: 17.6px;
+  font-size: 1.1rem;
+  font-weight: 300 !important;
+  line-height: 28.8px;
+  line-height: 1.8rem;
 }
 h1,h2,h3,h4,h5,h6 {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: normal !important;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal !important;
 }
 h2.primary-color {
   font-size: calc(1.20465rem + 0.74419vw);
@@ -22,16 +22,16 @@ h2.primary-color {
     display: none;
 }
 .btn-primary {
-    color: #fff;
-    background-color: #ff6600;
-    border-color: transparent;
+  background-color: #ff6600;
+  border-color: transparent;
+  color: #fff;
 }
 .gris {
-    background: #373737;
-    color: #fff;
+  background: #373737;
+  color: #fff;
 }
 .gris a {
-    color: #fff;
+  color: #fff;
 }
 .no-m {
   margin: 0!important;
@@ -129,100 +129,220 @@ h2.primary-color {
   color: #ff6600 !important;
 }
 span.lead {
-    color: #7a7a7a;
-    line-height: 28.8px;
-    line-height: 1.8rem;
+  color: #7a7a7a;
+  line-height: 28.8px;
+  line-height: 1.8rem;
 }
 strong.nobold {
-    font-weight: 300;
+  font-weight: 300;
 }
 #wrapper {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
-/*Detalle de producto*/
-#accordion .btn-link {
-    width: 100%;
-}
-.product-variants .control-label {
-    color: #ff6600
-}
-.form-control:focus, .input-group.focus {
-    outline: 3px solid #ff6600;
-    outline: .1875rem solid #ff6600;
-}
-.product-add-to-cart {
-    display: none;
-}
-.product-prices {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-}
-.current-price {
-    font-size: 32px;
-    font-size: 2rem;
-}
-.product-prices .tax-shipping-delivery-label {
-    font-size: 16px;
-    font-size: 1rem;
+/*Header*/
+#header .header-nav{
+    margin-bottom: 10px;
+  }
+#header .header-top a[data-depth="0"]{
+    color:#ffffff;
+    font-size: calc(1.02674rem + 0.27907vw);
+    font-weight: 400;
+    text-transform: none;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+  }
+#header .header-top a[data-depth="0"]:hover {
+      color: #333;
+      text-decoration: none;
+      -webkit-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s;
+    }
+#header .header-top {
+    background-color: #ff6600;
+    padding-bottom: 4px;
+    padding-top: 6px;
+  }
+#header .header-top .menu, #header ul{
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+#search_block_top{
+  padding-bottom: 10px;
+
 }
 /*Footer*/
 .footer-container {
-    background: #f1f1f1;
+  background: #f1f1f1;
 }
 .footer-container .h3, .footer-container #block_myaccount_infos .myaccount-title a, .footer-container .block-contact .block-contact-title, .linklist .blockcms-title a {
-    color: #ff6600;
+  color: #ff6600;
 }
 .block-contact-title, .blockcms-title, .myaccount-title, .myaccount-title a {
-    font-weight: 300;
-    font-size: 16px;
-    font-size: 1rem;
+  font-weight: 300;
+  font-size: 16px;
+  font-size: 1rem;
 }
 .block-contact {
-    font-size: 14.4px;
-    font-size: .9rem;
-    line-height: 30.4px;
-    line-height: 1.9rem;
+  font-size: 14.4px;
+  font-size: .9rem;
+  line-height: 30.4px;
+  line-height: 1.9rem;
 }
 .gris p > a {
-    font-size: 12px;
-    font-size: .75rem;
-}
-/*Productos*/
-.product-miniature .product-description {
-    background-color: #373737!important;
-}
-.product-price-and-shipping {
-    color: #fff!important;
-}
-.product-title a{
-    color: #fff!important;
-}
-#products .product-miniature .discount-amount.discount-amount, #products .product-miniature .discount-amount.discount-percentage, #products .product-miniature .discount-percentage.discount-amount, #products .product-miniature .discount-percentage.discount-percentage, #products .product-miniature .on-sale.discount-amount, #products .product-miniature .on-sale.discount-percentage, #products .product-miniature .online-only.discount-amount, #products .product-miniature .online-only.discount-percentage, #products .product-miniature .pack.discount-amount, #products .product-miniature .pack.discount-percentage, #products .product-miniature .product-flags .new.discount-amount, #products .product-miniature .product-flags .new.discount-percentage, .featured-products .product-miniature .discount-amount.discount-amount, .featured-products .product-miniature .discount-amount.discount-percentage, .featured-products .product-miniature .discount-percentage.discount-amount, .featured-products .product-miniature .discount-percentage.discount-percentage, .featured-products .product-miniature .on-sale.discount-amount, .featured-products .product-miniature .on-sale.discount-percentage, .featured-products .product-miniature .online-only.discount-amount, .featured-products .product-miniature .online-only.discount-percentage, .featured-products .product-miniature .pack.discount-amount, .featured-products .product-miniature .pack.discount-percentage, .featured-products .product-miniature .product-flags .new.discount-amount, .featured-products .product-miniature .product-flags .new.discount-percentage, .product-accessories .product-miniature .discount-amount.discount-amount, .product-accessories .product-miniature .discount-amount.discount-percentage, .product-accessories .product-miniature .discount-percentage.discount-amount, .product-accessories .product-miniature .discount-percentage.discount-percentage, .product-accessories .product-miniature .on-sale.discount-amount, .product-accessories .product-miniature .on-sale.discount-percentage, .product-accessories .product-miniature .online-only.discount-amount, .product-accessories .product-miniature .online-only.discount-percentage, .product-accessories .product-miniature .pack.discount-amount, .product-accessories .product-miniature .pack.discount-percentage, .product-accessories .product-miniature .product-flags .new.discount-amount, .product-accessories .product-miniature .product-flags .new.discount-percentage, .product-miniature .product-miniature .discount-amount.discount-amount, .product-miniature .product-miniature .discount-amount.discount-percentage, .product-miniature .product-miniature .discount-percentage.discount-amount, .product-miniature .product-miniature .discount-percentage.discount-percentage, .product-miniature .product-miniature .on-sale.discount-amount, .product-miniature .product-miniature .on-sale.discount-percentage, .product-miniature .product-miniature .online-only.discount-amount, .product-miniature .product-miniature .online-only.discount-percentage, .product-miniature .product-miniature .pack.discount-amount, .product-miniature .product-miniature .pack.discount-percentage, .product-miniature .product-miniature .product-flags .new.discount-amount, .product-miniature .product-miniature .product-flags .new.discount-percentage {
-    background: #ff6600!important;
-}
-.h2.h2.products-section-title.text-uppercase {    
-    color: #ff6600!important;
-    font-size: 25.6px;
-    font-size: 1.6rem;
+  font-size: 12px;
+  font-size: .75rem;
 }
 /*Productos destacados*/
+.h2.h2.products-section-title.text-uppercase {    
+  color: #ff6600!important;
+  font-size: 25.6px;
+  font-size: 1.6rem;
+}
+.product-miniature .product-description {
+  background-color: #373737!important;
+}
+.product-price-and-shipping {
+  color: #fff!important;
+}
+.product-title a{
+  color: #fff!important;
+}
+#products .product-miniature .discount-amount.discount-amount, #products .product-miniature .discount-amount.discount-percentage, #products .product-miniature .discount-percentage.discount-amount, #products .product-miniature .discount-percentage.discount-percentage, #products .product-miniature .on-sale.discount-amount, #products .product-miniature .on-sale.discount-percentage, #products .product-miniature .online-only.discount-amount, #products .product-miniature .online-only.discount-percentage, #products .product-miniature .pack.discount-amount, #products .product-miniature .pack.discount-percentage, #products .product-miniature .product-flags .new.discount-amount, #products .product-miniature .product-flags .new.discount-percentage, .featured-products .product-miniature .discount-amount.discount-amount, .featured-products .product-miniature .discount-amount.discount-percentage, .featured-products .product-miniature .discount-percentage.discount-amount, .featured-products .product-miniature .discount-percentage.discount-percentage, .featured-products .product-miniature .on-sale.discount-amount, .featured-products .product-miniature .on-sale.discount-percentage, .featured-products .product-miniature .online-only.discount-amount, .featured-products .product-miniature .online-only.discount-percentage, .featured-products .product-miniature .pack.discount-amount, .featured-products .product-miniature .pack.discount-percentage, .featured-products .product-miniature .product-flags .new.discount-amount, .featured-products .product-miniature .product-flags .new.discount-percentage, .product-accessories .product-miniature .discount-amount.discount-amount, .product-accessories .product-miniature .discount-amount.discount-percentage, .product-accessories .product-miniature .discount-percentage.discount-amount, .product-accessories .product-miniature .discount-percentage.discount-percentage, .product-accessories .product-miniature .on-sale.discount-amount, .product-accessories .product-miniature .on-sale.discount-percentage, .product-accessories .product-miniature .online-only.discount-amount, .product-accessories .product-miniature .online-only.discount-percentage, .product-accessories .product-miniature .pack.discount-amount, .product-accessories .product-miniature .pack.discount-percentage, .product-accessories .product-miniature .product-flags .new.discount-amount, .product-accessories .product-miniature .product-flags .new.discount-percentage, .product-miniature .product-miniature .discount-amount.discount-amount, .product-miniature .product-miniature .discount-amount.discount-percentage, .product-miniature .product-miniature .discount-percentage.discount-amount, .product-miniature .product-miniature .discount-percentage.discount-percentage, .product-miniature .product-miniature .on-sale.discount-amount, .product-miniature .product-miniature .on-sale.discount-percentage, .product-miniature .product-miniature .online-only.discount-amount, .product-miniature .product-miniature .online-only.discount-percentage, .product-miniature .product-miniature .pack.discount-amount, .product-miniature .product-miniature .pack.discount-percentage, .product-miniature .product-miniature .product-flags .new.discount-amount, .product-miniature .product-miniature .product-flags .new.discount-percentage {
+  background: #ff6600!important;
+}
 .slick-slide > div {
   display: grid;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
+/*Detalle productos*/
+#accordion .btn-link {
+  width: 100%;
+}
+.product-variants .control-label {
+  color: #ff6600
+}
+.form-control:focus, .input-group.focus {
+  outline: 3px solid #ff6600;
+  outline: .1875rem solid #ff6600;
+}
+.product-add-to-cart {
+  display: none;
+}
+.product-prices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.current-price {
+  font-size: 32px;
+  font-size: 2rem;
+}
+.product-prices .tax-shipping-delivery-label {
+  font-size: 16px;
+  font-size: 1rem;
+}
+.product-variants .control-label {
+    color: #ff6600;
+    font-size: larger;
+  }
+/*& .input-radio {
+    cursor: pointer;
+    height: 100%;
+    opacity: 100;
+    position: relative;
+    top: 0;
+    width: auto;
+  }*/
+.product-variants .inputcont {
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+/* Ocultar default radio button */
+.product-variants .inputcont input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+/* Crea custom radio button */
+.product-variants .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+.product-variants .inputcont:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+.product-variants .inputcont input:checked ~ .checkmark {
+    background-color: #ff6600;
+  }
+/* Crea indicador */
+.product-variants .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+/* Mostrar indicador (dot/circle) checked */
+.product-variants .inputcont input:checked ~ .checkmark:after {
+    display: block;
+  }
+/* Style dot/circle */
+.product-variants .inputcont .checkmark:after {
+    top: 7px;
+    left: 7px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: white;
+  }
+/*-----------*/
+.product-variants .radio-label {
+    background: transparent;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    color: #888;
+    display: inline;
+    font-size: medium;
+    font-weight: 300;
+    padding: 2px 10px;
+    padding: 0.125rem 0.625rem;
+  }
+.product-variants .input-color:checked + span, .product-variants .input-color:hover + span, .product-variants .input-radio:checked + span, .product-variants .input-radio:hover + span {
+    border: none;
+    color: #444;
+  }
+.product-variants > .product-variants-item {
+    border-bottom: solid 1px #dbdbdb;
+    margin: 0;
+    padding: 12.8px 0;
+    padding: .8rem 0;
+  }
 /*Ventajas*/
 #services {
-    background-color: #f9f9f9;
-    margin-top: 48px;
-    margin-top: 3rem;
-    padding-top: 48px;
-    padding-top: 3rem;
+  background-color: #f9f9f9;
+  margin-top: 48px;
+  margin-top: 3rem;
+  padding-top: 48px;
+  padding-top: 3rem;
 }
 /*Mediaquery*/
 @media screen and (min-width: 1280px){
@@ -230,10 +350,24 @@ strong.nobold {
         font-size: 28.8px;
         font-size: 1.8rem;
     }
+    #header .header-top a[data-depth="0"]{
+        font-size: 20px;
+        font-size: 1.25rem;
+    }
 }
 @media screen and (max-width: 420px){
     h2.primary-color{
         font-size: 22.4px;
         font-size: 1.4rem;
     }
+    #header .header-top a[data-depth="0"]{
+        font-size: 17.6px;
+        font-size: 1.1rem;
+    }
+}
+@media screen and (max-width: 768px) {
+
+  #search_block_top{
+    display: none;
+  }
 }
