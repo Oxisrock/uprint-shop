@@ -1,27 +1,4 @@
-{**
- * 2007-2018 PrestaShop
- *
- * NOTICE OF LICENSE
- *
- * This source file is subject to the Academic Free License 3.0 (AFL-3.0)
- * that is bundled with this package in the file LICENSE.txt.
- * It is also available through the world-wide-web at this URL:
- * https://opensource.org/licenses/AFL-3.0
- * If you did not receive a copy of the license and are unable to
- * obtain it through the world-wide-web, please send an email
- * to license@prestashop.com so we can send you a copy immediately.
- *
- * DISCLAIMER
- *
- * Do not edit or add to this file if you wish to upgrade PrestaShop to newer
- * versions in the future. If you wish to customize PrestaShop for your
- * needs please refer to http://www.prestashop.com for more information.
- *
- * @author    PrestaShop SA <contact@prestashop.com>
- * @copyright 2007-2018 PrestaShop SA
- * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
- * International Registered Trademark & Property of PrestaShop SA
- *}
+
 {block name='header_banner'}
   <div class="header-banner">
     {hook h='displayBanner'}
@@ -54,11 +31,11 @@
   </nav>
 {/block}
 
-{block name='header_top'}
-  <div class="header-top">
-    <div class="container">
-       <div class="row">
-        <div class="col-md-2 hidden-sm-down" id="_desktop_logo">
+{block name='header_top2'}
+<div class="header_top2">
+  <div class="container">
+    <div class="row">
+        <div class="col-md-9 hidden-sm-down" id="_desktop_logo">
             {if $page.page_name == 'index'}
               <h1>
                 <a href="{$urls.base_url}">
@@ -71,6 +48,18 @@
                 </a>
             {/if}
         </div>
+      <div id="search_block_top" class="col-md-3">
+        {hook h='displaySearch'}
+      </div>
+    </div>
+  </div>
+</div>
+{/block}
+
+{block name='header_top'}
+  <div class="header-top">
+    <div class="container">
+       <div class="row">
         <div class="col-md-10 col-sm-12 position-static">
           {hook h='displayTop'}
           <div class="clearfix"></div>

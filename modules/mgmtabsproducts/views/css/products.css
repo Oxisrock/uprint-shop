@@ -1,48 +1,73 @@
+/*CSS Sección Navproducts*/
+#navproducts {
+  margin-top: 32px;
+  margin-top: 2rem;
+  margin-bottom: 96px;
+  margin-bottom: 6rem;
+
+}
 #navproducts .grid-products{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
+  grid-column-gap: 10px;  
+  -ms-flex-pack: distribute;  
+      justify-content: space-around;
+  justify-items: center;
 }
-
 #navproducts .grid-products img {
   max-height: 132px;
+  -webkit-transition: all ease .3s;
+  -o-transition: all ease .3s;
   transition: all ease .3s;
 }
 #navproducts .grid-products img:hover {
   opacity: .8;
+  -webkit-transition: all ease .3s;
+  -o-transition: all ease .3s;
   transition: all ease .3s;
 }
 #navproducts .grid-products a {
   color: #ff6600;
-  transition: all ease .3s;
-} 
-#navproducts .grid-products a:hover {
-  color: #444;
+  -webkit-transition: all ease .3s;
+  -o-transition: all ease .3s;
   transition: all ease .3s;
 }
-
+#navproducts .grid-products a:hover {
+  color: #444;
+  -webkit-transition: all ease .3s;
+  -o-transition: all ease .3s;
+  transition: all ease .3s;
+}
 #navproducts .nav-item {
   border-bottom: 1px solid #d2d2d2;
   border-top: 1px solid transparent;
   float: none;
   margin-bottom: -1px;
+  padding-bottom: 16px;
   padding-bottom: 1rem;
+  padding-top: 16px;
   padding-top: 1rem;
   position: relative;
+  -webkit-transition: all ease .3s;
+  -o-transition: all ease .3s;
+  transition: all ease .3s;
 }
 #navproducts .nav-item:hover {
   background-color:  #f4f6f6 ;
   border-top: 1px solid #d2d2d2;
+  -webkit-transition: all ease .3s;
+  -o-transition: all ease .3s;
+  transition: all ease .3s;
 }
 #navproducts .nav-item a{
+  font-size: 22.4px;
   font-size: 1.4rem;
   font-weight: 300;
 }
 #navproducts .nav-item .nav-link.active, .nav-item .nav-separtor.active {
   color: #ff6600;
 }
-#navproducts .nav-item .nav-link.active::after {
+#navproducts .nav-item .nav-link.active:after {
   content: "\f054";
   right: 0;
   font-family: FontAwesome;
@@ -51,3 +76,30 @@
   transition: all ease .3s;
   position: absolute;
 }
+@media (min-width: 0px) and (max-width: 544px) {
+#navproducts {
+    margin-top: 8px;
+    margin-top: .5rem;
+    margin-bottom: 64px;
+    margin-bottom: 4rem
+
+}
+#navproducts .grid-products{
+    grid-column-gap: 0px;
+    grid-template-columns: repeat(2, 1fr)
+}
+#navproducts .grid-products img {
+    max-height: 86px
+}
+#navproducts .grid-products a {
+    font-size: 13px
+}
+#navproducts .nav-item {
+    padding-bottom: 5px;
+    padding-top: 5px
+}
+#navproducts .nav-item a{
+    font-size: 16px;
+    font-size: 1rem
+}
+  }
