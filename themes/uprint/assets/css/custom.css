@@ -400,3 +400,9 @@ strong.nobold {
     display: none;
   }
 }
+.col-md-6.col-xs-6.qty {
+  display: none;
+}
+.col-md-6.col-xs-2.price {
+  display: none;
+}
