@@ -240,9 +240,80 @@ strong.nobold {
           justify-content: center;
 }
 /*Detalle productos*/
+#main .h1, #main .h2, #main .h3 {
+    text-transform: none;
+    color: #777;
+    height: 40px;
+  }
+#main figcaption.image-caption p {
+      font-size: 14.4px;
+      font-size: .9rem;
+      font-weight: 300 !important;
+      line-height: 17.6px;
+      line-height: 1.1rem;
+    }
+#main .product-images > li.thumb-container > .thumb.selected, #main .product-images > li.thumb-container > .thumb:hover {
+    border: 3px solid #ff6600;
+  }
+#main #product-modal .modal-content figure {
+      margin: 0 0 16px;
+      margin: 0 0 1rem;
+      max-width: 570px;
+    }
+#main #product-modal .modal-content .modal-body .image-caption {
+      background: #fff;
+      border-top: 1px solid #f1f1f1;
+      padding: 10px 20px;
+      padding: .625rem 1.25rem;
+      width: 600px;
+    }
+#main #product-modal .modal-content .modal-body .product-images > li.thumb-container > .thumb.selected, #main #product-modal .modal-content .modal-body .product-images > li.thumb-container > .thumb:hover {
+      border: 3px solid #ff6600;
+    }
+#main #product-modal .modal-content .modal-body .product-cover-modal {
+      background: #fff;
+      max-width: 600px;
+    }
 #accordion .btn-link {
+  color: #fff;
+  text-decoration: none;
   width: 100%;
-}
+  }
+#accordion .btn-link:hover {
+    color:#fff;
+  }
+#accordion .card {
+    position: relative;
+    display: block;
+    margin-bottom: 0;
+    background-color: #fff;
+    border-radius: 0;
+    border: 0px solid transparent;
+  }
+#accordion .card-header {
+    padding: 2px;
+    margin-bottom: 0;
+    background-color: #ff6600;
+    border-bottom: 0px solid transparent;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+  }
+#accordion .card-header:hover {
+      background-color:#d85600;
+      -webkit-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s;
+    }
+.accordionproducts .card p {
+      font-size: calc(0.70233rem + 0.37209vw);
+      line-height: 20.8px;
+      line-height: 1.3rem;
+    }
+.accordionproducts .card p i.fa {
+        font-size: calc(0.55116rem + 0.18605vw);
+        color: #ff6600;
+      }
 .product-variants .control-label {
   color: #ff6600
 }
@@ -379,6 +450,14 @@ strong.nobold {
         font-size: 16px;
         font-size: 1rem;
     }
+    .accordionproducts .card p{
+        font-size: 16px;
+        font-size: 1rem;
+    }
+    .accordionproducts .card p i.fa{
+        font-size: 11.2px;
+        font-size: .7rem;
+    }
 }
 @media screen and (max-width: 420px){
     h2.primary-color{
@@ -393,7 +472,29 @@ strong.nobold {
         font-size: 12.8px;
         font-size: .8rem;
     }
+    .accordionproducts .card p{
+        font-size: 12.8px;
+        font-size: .8rem;
+    }
+    .accordionproducts .card p i.fa{
+        font-size: 9.6px;
+        font-size: .6rem;
+    }
 }
+@media (min-width: 0px) and (max-width: 544px) {
+#header .header-top a[data-depth="0"]{
+      color: #555;
+      -webkit-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s
+  }
+#header .header-top a[data-depth="0"]:hover {
+        color: #ff6600;
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s
+    }
+    }
 @media screen and (max-width: 768px) {
 
   #search_block_top{

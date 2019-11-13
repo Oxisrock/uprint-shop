@@ -60,8 +60,7 @@
   transition: all ease .3s;
 }
 #navproducts .nav-item a{
-  font-size: 22.4px;
-  font-size: 1.4rem;
+  font-size: calc(1.10233rem + 0.37209vw);
   font-weight: 300;
 }
 #navproducts .nav-item .nav-link.active, .nav-item .nav-separtor.active {
@@ -78,8 +77,8 @@
 }
 @media (min-width: 0px) and (max-width: 544px) {
 #navproducts {
-    margin-top: 8px;
-    margin-top: .5rem;
+    margin-top: -8px;
+    margin-top: -.5rem;
     margin-bottom: 64px;
     margin-bottom: 4rem
 
@@ -95,11 +94,23 @@
     font-size: 13px
 }
 #navproducts .nav-item {
-    padding-bottom: 5px;
-    padding-top: 5px
-}
-#navproducts .nav-item a{
-    font-size: 16px;
-    font-size: 1rem
+    padding-bottom: 8px;
+    padding-top: 8px
 }
   }
+@media screen and (min-width: 1280px) {
+  #navproducts .nav-item a {
+    font-size: 22.4px;
+    font-size: 1.4rem;
+
+  }
+
+}
+@media screen and (max-width: 420px) {
+  #navproducts .nav-item a {
+    font-size: 19.2px;
+    font-size: 1.2rem;
+
+  }
+
+}

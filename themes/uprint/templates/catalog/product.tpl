@@ -79,19 +79,25 @@
         {/block}
       </section>
       {/block}
-      <div id="accordion">
+      <div id="accordion" class="accordionproducts">
         <div class="card">
-          <div class="card-header" id="headingOne">
+          <div class="card-header" id="fileCheck">
             <h5 class="mb-0">
-              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Collapsible Group Item #1
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                <i class="fa fa-check"></i> Chequeo de archivo gratis
               </button>
             </h5>
           </div>
 
-          <div id="collapseOne" class="panel-collapse collapse in" aria-labelledby="headingOne" data-parent="#accordion">
+          <div id="collapseOne" class="collapse" aria-labelledby="fileCheck" data-parent="#accordion">
             <div class="card-body p-2">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              <p><b>Como parte de nuestro servicio revisaremos gratuitamente lo siguiente:</b></p>
+              <p><i class="fa fa-circle-o"></i>  Ancho y alto del archivo a imprimir.</p>
+              <p><i class="fa fa-circle-o"></i>  PDF como formato del archivo.</p>
+              <p><i class="fa fa-circle-o"></i>  Que tenga una calidad mínima de impresión, cercana a los 266 ppp.</p>
+              <p><i class="fa fa-circle-o"></i>  Color en modo CMYK. Si hay colores Pantone® serán convertidos automáticamente a CMYK, salvo que el cliente haya pagado adicionalmente un servicio de igualación de color.</p>
+              <p><i class="fa fa-circle-o"></i>  Qué el número de páginas corresponda con el pedido. No se verifica el orden de las mismas ni si hay algunas repetidas.</p>
+              <a href="">Ver más...</a>
             </div>
           </div>
         </div>
@@ -99,27 +105,36 @@
           <div class="card-header" id="headingTwo">
             <h5 class="mb-0">
               <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Collapsible Group Item #2
+                <i class="fa fa-print"></i>  Prepará tus archivos para imprimir
               </button>
             </h5>
           </div>
           <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
             <div class="card-body p-2">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              <p><i class="fa fa-circle-o"></i>  Resolución mínima 266 ppp (dpi).</p>
+              <p><i class="fa fa-circle-o"></i>  Modo de color CMYK.</p>
+              <p><i class="fa fa-circle-o"></i>  Formato PDF. Cada página debe estar separada; pero todas contenidas en un solo archivo.</p>
+              <p><i class="fa fa-circle-o"></i>  Fuentes convertidas a curvas e imágenes incrustadas.</p>
+              <p><i class="fa fa-circle-o"></i>  Demasía interna y externa de 3 mm por lado de corte.</p>
+              <br>
+              <p>Si detectamos algún detalle que pueda quitarle calidad al resultado final de tu trabajo, te contactarémos.</p>
             </div>
           </div>
         </div>
         <div class="card">
-          <div class="card-header" id="headingThree">
+          <div class="card-header" id="attention">
             <h5 class="mb-0">
               <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Collapsible Group Item #3
+              <i class="fa fa-exclamation-circle"></i>  Ten en cuenta esto
               </button>
             </h5>
           </div>
-          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-            <div class="card-body p-2">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          <div id="collapseThree" class="collapse" aria-labelledby="atenccion" data-parent="#accordion">
+            <div class="card-body p-2">              
+              <p><i class="fa fa-circle-o"></i>  El precio mostrado corresponde a un solo modelo para cada pedido. Si quieres  varios modelos del mismo producto, debes ordenar cada modelo con su respectiva cantidad.</p>
+              <p><i class="fa fa-circle-o"></i>  El tiempo de producción comienza a partir del momento en que se aprueba el arte final.</p>
+              <p><i class="fa fa-circle-o"></i>  No está contemplado en el plazo de entrega los tiempos de envíos, estos corre por cuenta de las empresas de transporte.</p>
+              <p><i class="fa fa-circle-o"></i>  La factura se emite a nombre de la persona que haga la compra, en caso de querer que sea a nombre de otra persona, por favor indícalo en “Información adicional” al momento de comprar.</p>
             </div>
           </div>
         </div>
