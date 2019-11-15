@@ -104,12 +104,12 @@
         <div class="card">
           <div class="card-header" id="headingTwo">
             <h5 class="mb-0">
-              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                 <i class="fa fa-print"></i>  Prepará tus archivos para imprimir
               </button>
             </h5>
           </div>
-          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div id="collapseTwo" class="panel-collapse collapse in" aria-labelledby="headingTwo" data-parent="#accordion">
             <div class="card-body p-2">
               <p><i class="fa fa-circle-o"></i>  Resolución mínima 266 ppp (dpi).</p>
               <p><i class="fa fa-circle-o"></i>  Modo de color CMYK.</p>
@@ -192,11 +192,35 @@
         {include file="catalog/_partials/product-customization.tpl" customizations=$product.customizations}
         {/block}
         {/if}
-        <button class="btn btn-primary mb-1" style="width:100%;" id="add_cart_custom"><i class="fa fa-cart"></i> Añadir al Carrito</button>
+        <hr>
+        {* ////////////////////////////////////////////////////////
+          Este div debe ser cambiado por el módulo correspondiente
+          //////////////////////////////////////////////////////// *}
+        <div id="additional_options" class="">
+          <center class="lead"><b>Escoger una opción</b></center>
+          <br>
+          <form action="product_submit" method="get" accept-charset="utf-8">
+            <div class="form-group" style="margin-bottom: 0.5rem; position: relative;">
+              <label class="custom-file-upload" for="additionalOptionsFile"><i class="fa fa-upload"></i>&nbsp; Subir archivo PDF</label>
+              <input type="file" class="form-control-file" id="additionalOptionsFile">
+              <div class="ocultarboton"></div>
+            </div>
+            <div class="form-group contoptionslink">
+              <input type="text" class="form-control optionslink" id="additionalOptionsLink" placeholder="&#xf0ed;&nbsp;Indicar link de descarga">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" id="additionalOptionsText" placeholder="Si tenés alguna información adicional por favor indicala aca" rows="3"></textarea>
+            </div>
+          </form>
+        </div>
+        {* //////////////////////////////////////////////////////// *}
+        <button class="btn btn-success mb-1 btn-cart" style="width:100%;" id="add_cart_custom"><i class="fa fa-cart-plus fa-lg"></i>&nbsp;&nbsp;Añadir al Carrito</button>
         <img src="{$urls.base_url}img/03.JPG" class="img-fluid" style="width:100%;"> 
       </form>
     </div>
-    <div class="col-md-12">
+    <div class="col-md-4">
+    </div>
+    <div class="col-md-8">
       {block name='product_tabs'}
       <div class="tabs mb-2">
         <ul class="nav nav-tabs" role="tablist">

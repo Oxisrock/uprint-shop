@@ -21,6 +21,9 @@ h2.primary-color {
 .breadcrumb {
     display: none;
 }
+.btn-cart {
+  font-size: calc(1.00233rem + 0.37209vw);
+}
 .btn-primary {
   background-color: #ff6600;
   border-color: transparent;
@@ -243,8 +246,66 @@ strong.nobold {
 #main .h1, #main .h2, #main .h3 {
     text-transform: none;
     color: #777;
-    height: 40px;
   }
+#main #additional_options .ocultarboton {
+      background-color: #ffffff;
+      color:#ffffff;
+      height:30px;
+      position: absolute;
+      top: 40px;
+      width:100px;
+    }
+#main #additional_options .custom-file-upload {
+      border: 2px solid #f60;
+      color: #777;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 16px;
+      font-size: 1rem;              
+      padding: 6px 12px;
+      text-align: center;
+      width: 100%;
+    }
+#main #additional_options .optionslink {
+      text-align: center;
+      border: 0px solid transparent !important;
+      font-family: 'fontawesome';
+    }
+#main #additional_options .contoptionslink {
+      border: 2px solid #f60;
+    }
+#main #additional_options .form-control {
+      background: #fff;
+      color: #7a7a7a;
+      border: 1px solid #000000;
+      border: 1px solid rgba(0, 0, 0, .25);
+      padding: 8px 16px;
+      padding: .5rem 1rem;
+    }
+#main #additional_options .form-control::-webkit-input-placeholder {
+        color: #777;
+        font-size: 16px;
+        font-size: 1rem;
+        opacity: 1;
+      }
+#main #additional_options .form-control::-moz-placeholder {
+        color: #777;
+        font-size: 16px;
+        font-size: 1rem;
+        opacity: 1;
+      }
+#main #additional_options .form-control::-ms-input-placeholder {
+        color: #777;
+        font-size: 16px;
+        font-size: 1rem;
+        opacity: 1;
+      }
+#main #additional_options .form-control::placeholder {
+        color: #777;
+        font-size: 16px;
+        font-size: 1rem;
+        opacity: 1;
+      }
 #main figcaption.image-caption p {
       font-size: 14.4px;
       font-size: .9rem;
@@ -274,6 +335,17 @@ strong.nobold {
       background: #fff;
       max-width: 600px;
     }
+#main .tabs .nav-tabs .nav-link.active, #main .tabs .nav-tabs .nav-link:hover {
+    border: none;
+    border-bottom: 3px solid #ff6600;
+  }
+#main .tabs .nav-tabs .nav-link {
+    font-weight: 300;
+    font-size: calc(0.95233rem + 0.37209vw);
+  }
+#main .tabs .nav-tabs .nav-link.active {
+    color: #ff6600;
+  }
 #accordion .btn-link {
   color: #fff;
   text-decoration: none;
@@ -442,6 +514,10 @@ strong.nobold {
         font-size: 28.8px;
         font-size: 1.8rem;
     }
+    .btn-cart{
+        font-size: 20.8px;
+        font-size: 1.3rem;
+    }
     #header .header-top a[data-depth="0"]{
         font-size: 20px;
         font-size: 1.25rem;
@@ -449,6 +525,10 @@ strong.nobold {
     #header .top-menu a[data-depth="1"], #header .top-menu a[data-depth="2"]{
         font-size: 16px;
         font-size: 1rem;
+    }
+    #main .tabs .nav-tabs .nav-link{
+        font-size: 20px;
+        font-size: 1.25rem;
     }
     .accordionproducts .card p{
         font-size: 16px;
@@ -464,6 +544,10 @@ strong.nobold {
         font-size: 22.4px;
         font-size: 1.4rem;
     }
+    .btn-cart{
+        font-size: 17.6px;
+        font-size: 1.1rem;
+    }
     #header .header-top a[data-depth="0"]{
         font-size: 17.6px;
         font-size: 1.1rem;
@@ -471,6 +555,10 @@ strong.nobold {
     #header .top-menu a[data-depth="1"], #header .top-menu a[data-depth="2"]{
         font-size: 12.8px;
         font-size: .8rem;
+    }
+    #main .tabs .nav-tabs .nav-link{
+        font-size: 16.8px;
+        font-size: 1.05rem;
     }
     .accordionproducts .card p{
         font-size: 12.8px;
@@ -500,10 +588,4 @@ strong.nobold {
   #search_block_top{
     display: none;
   }
-}
-.col-md-6.col-xs-6.qty {
-  display: none;
-}
-.col-md-6.col-xs-2.price {
-  display: none;
 }
