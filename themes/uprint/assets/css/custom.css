@@ -247,38 +247,58 @@ strong.nobold {
     text-transform: none;
     color: #777;
   }
+#main #additional_options input[type="file"] {
+      font-family: 'Roboto',Sans-serif;
+      font-size: 13.6px;
+      font-size: .85rem;
+      font-weight: 300;
+    }
 #main #additional_options .ocultarboton {
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       background-color: #ffffff;
-      color:#ffffff;
+      display: grid;
       height:30px;
+      justify-items: center;
       position: absolute;
       top: 40px;
-      width:100px;
+      width:94px;
     }
+#main #additional_options .ocultarboton p {
+        color:#777;
+        font-family: 'Roboto',Sans-serif;
+        font-size: 13.6px;
+        font-size: .85rem;
+        font-weight: 300;        
+      }
 #main #additional_options .custom-file-upload {
       border: 2px solid #f60;
       color: #777;
       cursor: pointer;
       display: inline-block;
+      font-family: 'Roboto',Sans-serif;
       font-size: 16px;
       font-size: 1rem;              
+      font-weight: 300;
       padding: 6px 12px;
       text-align: center;
       width: 100%;
     }
 #main #additional_options .optionslink {
-      text-align: center;
       border: 0px solid transparent !important;
-      font-family: 'fontawesome';
+      font-family: 'fontawesome','Roboto',Sans-serif;
+      font-weight: 300;
+      text-align: center;
     }
 #main #additional_options .contoptionslink {
       border: 2px solid #f60;
     }
 #main #additional_options .form-control {
       background: #fff;
-      color: #7a7a7a;
       border: 1px solid #000000;
       border: 1px solid rgba(0, 0, 0, .25);
+      color: #7a7a7a;
       padding: 8px 16px;
       padding: .5rem 1rem;
     }
@@ -286,24 +306,32 @@ strong.nobold {
         color: #777;
         font-size: 16px;
         font-size: 1rem;
+        font-family: 'fontawesome','Roboto',Sans-serif;
+        font-weight: 300;
         opacity: 1;
       }
 #main #additional_options .form-control::-moz-placeholder {
         color: #777;
         font-size: 16px;
         font-size: 1rem;
+        font-family: 'fontawesome','Roboto',Sans-serif;
+        font-weight: 300;
         opacity: 1;
       }
 #main #additional_options .form-control::-ms-input-placeholder {
         color: #777;
         font-size: 16px;
         font-size: 1rem;
+        font-family: 'fontawesome','Roboto',Sans-serif;
+        font-weight: 300;
         opacity: 1;
       }
 #main #additional_options .form-control::placeholder {
         color: #777;
         font-size: 16px;
         font-size: 1rem;
+        font-family: 'fontawesome','Roboto',Sans-serif;
+        font-weight: 300;
         opacity: 1;
       }
 #main figcaption.image-caption p {
@@ -346,6 +374,20 @@ strong.nobold {
 #main .tabs .nav-tabs .nav-link.active {
     color: #ff6600;
   }
+#main .product-prices {
+    display: block !important;
+  }
+#main .product-prices .current-price > span {
+      color: #00A9B3;
+    }
+#main .product-prices .current-price > span.iva {
+      color: #777 !important;
+      font-size: 16px !important;
+      font-size: 1rem !important;
+    }
+#main .product-prices .discount-percentage {
+      color: #f60;
+    }
 #accordion .btn-link {
   color: #fff;
   text-decoration: none;

@@ -203,7 +203,9 @@
             <div class="form-group" style="margin-bottom: 0.5rem; position: relative;">
               <label class="custom-file-upload" for="additionalOptionsFile"><i class="fa fa-upload"></i>&nbsp; Subir archivo PDF</label>
               <input type="file" class="form-control-file" id="additionalOptionsFile">
-              <div class="ocultarboton"></div>
+              <div class="ocultarboton">
+                <p>Archivo:</p>
+              </div>
             </div>
             <div class="form-group contoptionslink">
               <input type="text" class="form-control optionslink" id="additionalOptionsLink" placeholder="&#xf0ed;&nbsp;Indicar link de descarga">
