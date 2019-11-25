@@ -23,7 +23,7 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 {extends file='page.tpl'}
-
+Hola mundo
 {block name='page_title'}
   {$cms_category.name}
 {/block}

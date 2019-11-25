@@ -27,59 +27,62 @@
 {block name='content'}
   <section id="main">
 
-    {block name='product_list_header'}
-      <h2 id="js-product-list-header" class="h2">{$listing.label}</h2>
-    {/block}
-
     {if $category.level_depth == 2}
       <div id="subcategories">
-        <p class="subcategory-heading">{l s='Subcategories'}</p>
-        <div class="row clearfix">
-          {foreach from=$subcategories item=subcategory}
-            {block name='subcategory_list'}
-              {include file='catalog/_partials/miniatures/subcategory.tpl' listing=$listing}
-            {/block}
-          {/foreach}
+        <div class="container">
+          {* <p class="subcategory-heading">{l s='Subcategories'}</p> *}
+          <div class="row clearfix">
+            {foreach from=$subcategories item=subcategory}
+              {block name='subcategory_list'}
+                {include file='catalog/_partials/miniatures/subcategory.tpl' listing=$listing}
+              {/block}
+            {/foreach}
+          </div>          
         </div>
       </div>
     {else}
       <section id="products">
-        {if $listing.products|count}
+        <div class="container"> 
+          {if $listing.products|count}
 
-{*           <div>
-            {block name='product_list_top'}
-              {include file='catalog/_partials/products-top.tpl' listing=$listing}
+          {*<div>
+              {block name='product_list_top'}
+                {include file='catalog/_partials/products-top.tpl' listing=$listing}
+              {/block}
+            </div> *}
+
+            {block name='product_list_active_filters'}
+              <div id="" class="hidden-sm-down">
+                {$listing.rendered_active_filters nofilter}
+              </div>
             {/block}
-          </div> *}
 
-          {block name='product_list_active_filters'}
-            <div id="" class="hidden-sm-down">
-              {$listing.rendered_active_filters nofilter}
+            <div>
+              {block name='product_list'}
+                {include file='catalog/_partials/products.tpl' listing=$listing}
+              {/block}
             </div>
-          {/block}
 
-          <div>
-            {block name='product_list'}
-              {include file='catalog/_partials/products.tpl' listing=$listing}
-            {/block}
-          </div>
+            <div id="js-product-list-bottom">
+              {block name='product_list_bottom'}
+                {include file='catalog/_partials/products-bottom.tpl' listing=$listing}
+              {/block}
+            </div>
 
-          <div id="js-product-list-bottom">
-            {block name='product_list_bottom'}
-              {include file='catalog/_partials/products-bottom.tpl' listing=$listing}
-            {/block}
-          </div>
+          {else}
+            <div id="js-product-list-top"></div>
 
-        {else}
-          <div id="js-product-list-top"></div>
+            <div id="js-product-list">
+              {include file='errors/not-found.tpl'}
+            </div>
 
-          <div id="js-product-list">
-            {include file='errors/not-found.tpl'}
-          </div>
-
-          <div id="js-product-list-bottom"></div>
-        {/if}
+            <div id="js-product-list-bottom"></div>
+          {/if}
+        </div>
       </section>
     {/if}
+    {block name='product_list_header'}
+      <h2 id="js-product-list-header" class="h2">{$listing.label}</h2>
+    {/block}
   </section>
 {/block}

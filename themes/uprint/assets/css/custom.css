@@ -15,9 +15,11 @@ h1,h2,h3,h4,h5,h6 {
   font-family: 'Open Sans', sans-serif;
   font-weight: normal !important;
 }
+h1.page-heading {display: none;}
 h2.primary-color {
   font-size: calc(1.20465rem + 0.74419vw);
 }
+h2#js-product-list-header {display: none;}
 .breadcrumb {
     display: none;
 }
@@ -142,7 +144,88 @@ strong.nobold {
 #wrapper {
   background-color: #ffffff;
 }
-/*Header*/
+#wrapper .banner {
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    width: 1140px;
+  }
+#wrapper .banner img {
+      max-width: 100%;
+      height: auto;
+      width: 1140px;
+    }
+/*******************
+Carrito de compras
+*******************/
+#block-reassurance {
+  display:none;
+}
+/*******************
+Carousel
+*******************/
+#carousel {
+  -webkit-box-shadow: 1px 1px 7px 0 rgba(0, 0, 0, .15);
+          box-shadow: 1px 1px 7px 0 rgba(0, 0, 0, .15);
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+  margin-top: -25px;
+}
+#carousel .carousel-inner {
+    height: 400px;
+  }
+.carousel-fade .carousel-item {
+ opacity: 0;
+ -webkit-transition-duration: .6s;
+      -o-transition-duration: .6s;
+         transition-duration: .6s;
+ -webkit-transition-property: opacity;
+ -o-transition-property: opacity;
+ transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+/***************
+Categorías y Subcategorías
+***************/
+.block-category {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  height: 25vw;
+}
+#products .pagination {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/***************
+Header
+***************/
 #header a {
     color: #999;
   }
@@ -196,7 +279,9 @@ strong.nobold {
   padding-bottom: 10px;
 
 }
-/*Footer*/
+/****************
+Footer
+****************/
 .footer-container {
   background: #f1f1f1;
 }
@@ -218,7 +303,9 @@ strong.nobold {
   font-size: 12px;
   font-size: .75rem;
 }
-/*Productos destacados*/
+/********************
+Productos destacados
+********************/
 .h2.h2.products-section-title.text-uppercase {    
   color: #ff6600!important;
   font-size: 25.6px;
@@ -242,98 +329,13 @@ strong.nobold {
       -ms-flex-pack: center;
           justify-content: center;
 }
-/*Detalle productos*/
+/******************
+Detalle productos
+******************/
 #main .h1, #main .h2, #main .h3 {
     text-transform: none;
     color: #777;
   }
-#main #additional_options input[type="file"] {
-      font-family: 'Roboto',Sans-serif;
-      font-size: 13.6px;
-      font-size: .85rem;
-      font-weight: 300;
-    }
-#main #additional_options .ocultarboton {
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      background-color: #ffffff;
-      display: grid;
-      height:30px;
-      justify-items: center;
-      position: absolute;
-      top: 40px;
-      width:94px;
-    }
-#main #additional_options .ocultarboton p {
-        color:#777;
-        font-family: 'Roboto',Sans-serif;
-        font-size: 13.6px;
-        font-size: .85rem;
-        font-weight: 300;        
-      }
-#main #additional_options .custom-file-upload {
-      border: 2px solid #f60;
-      color: #777;
-      cursor: pointer;
-      display: inline-block;
-      font-family: 'Roboto',Sans-serif;
-      font-size: 16px;
-      font-size: 1rem;              
-      font-weight: 300;
-      padding: 6px 12px;
-      text-align: center;
-      width: 100%;
-    }
-#main #additional_options .optionslink {
-      border: 0px solid transparent !important;
-      font-family: 'fontawesome','Roboto',Sans-serif;
-      font-weight: 300;
-      text-align: center;
-    }
-#main #additional_options .contoptionslink {
-      border: 2px solid #f60;
-    }
-#main #additional_options .form-control {
-      background: #fff;
-      border: 1px solid #000000;
-      border: 1px solid rgba(0, 0, 0, .25);
-      color: #7a7a7a;
-      padding: 8px 16px;
-      padding: .5rem 1rem;
-    }
-#main #additional_options .form-control::-webkit-input-placeholder {
-        color: #777;
-        font-size: 16px;
-        font-size: 1rem;
-        font-family: 'fontawesome','Roboto',Sans-serif;
-        font-weight: 300;
-        opacity: 1;
-      }
-#main #additional_options .form-control::-moz-placeholder {
-        color: #777;
-        font-size: 16px;
-        font-size: 1rem;
-        font-family: 'fontawesome','Roboto',Sans-serif;
-        font-weight: 300;
-        opacity: 1;
-      }
-#main #additional_options .form-control::-ms-input-placeholder {
-        color: #777;
-        font-size: 16px;
-        font-size: 1rem;
-        font-family: 'fontawesome','Roboto',Sans-serif;
-        font-weight: 300;
-        opacity: 1;
-      }
-#main #additional_options .form-control::placeholder {
-        color: #777;
-        font-size: 16px;
-        font-size: 1rem;
-        font-family: 'fontawesome','Roboto',Sans-serif;
-        font-weight: 300;
-        opacity: 1;
-      }
 #main figcaption.image-caption p {
       font-size: 14.4px;
       font-size: .9rem;
@@ -387,6 +389,61 @@ strong.nobold {
     }
 #main .product-prices .discount-percentage {
       color: #f60;
+    }
+#main .product-customization {
+    margin: 24px 0;
+    margin: 1.5rem 0;
+  }
+#main .product-customization .card {
+      background-color: #fff;
+      border-radius: 0;
+      border: none;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      display: block;
+      margin-bottom: 0;
+      position: relative;
+    }
+#main .product-customization .card-block {
+      padding: 0;
+    }
+#main .product-customization p.card-title {
+      font-family: Roboto,sans-serif;
+      font-size: calc(1.15116rem + 0.18605vw);
+      font-weight: normal !important;
+      text-align: center;
+      width: 100%;
+    }
+#main .product-customization .custom-file {
+      margin-top: 4px;
+      margin-top: 0.25rem;
+    }
+#main .product-customization .custom-file-upload {
+      border: 2px solid #f60;
+      color: #777;
+      cursor: pointer;
+      display: inline-block;
+      font-family: 'Roboto',Sans-serif;
+      font-size: 16px;
+      font-size: 1rem;              
+      font-weight: 300;
+      padding: 6px 12px;
+      text-align: center;
+      width: 100%;
+    }
+#main .product-customization .product-message {
+      background: #f2f2f2;
+      border: none;
+      width: 100%;
+      height: 52.8px;
+      height: 3.3rem;
+      resize: none;
+      padding: 8px;
+      padding: .5rem;
+    }
+#main .product-customization .btn-info {
+      text-transform: none !important;
+      font-weight: normal;
     }
 #accordion .btn-link {
   color: #fff;
@@ -542,7 +599,9 @@ strong.nobold {
     padding: 12.8px 0;
     padding: .8rem 0;
   }
-/*Ventajas*/
+/****************
+Ventajas
+****************/
 #services {
   background-color: #f9f9f9;
   margin-top: 48px;
@@ -550,7 +609,9 @@ strong.nobold {
   padding-top: 48px;
   padding-top: 3rem;
 }
-/*Mediaquery*/
+/***************
+Mediaquery
+***************/
 @media screen and (min-width: 1280px){
     h2.primary-color{
         font-size: 28.8px;
@@ -571,6 +632,10 @@ strong.nobold {
     #main .tabs .nav-tabs .nav-link{
         font-size: 20px;
         font-size: 1.25rem;
+    }
+    #main .product-customization p.card-title{
+        font-size: 20.8px;
+        font-size: 1.3rem;
     }
     .accordionproducts .card p{
         font-size: 16px;
@@ -601,6 +666,10 @@ strong.nobold {
     #main .tabs .nav-tabs .nav-link{
         font-size: 16.8px;
         font-size: 1.05rem;
+    }
+    #main .product-customization p.card-title{
+        font-size: 19.2px;
+        font-size: 1.2rem;
     }
     .accordionproducts .card p{
         font-size: 12.8px;

@@ -31,7 +31,9 @@
     {block name='page_header_container'}
       {block name='page_title' hide}
         <header class="page-header">
-          <h1>{$smarty.block.child}</h1>
+          <div class="container">
+            <h1>{$smarty.block.child}</h1>            
+          </div>
         </header>
       {/block}
     {/block}
@@ -47,9 +49,11 @@
 
     {block name='page_footer_container'}
       <footer class="page-footer">
-        {block name='page_footer'}
-          <!-- Footer content -->
-        {/block}
+        <div class="container">
+          {block name='page_footer'}
+            <!-- Footer content -->
+          {/block}          
+        </div>
       </footer>
     {/block}
 

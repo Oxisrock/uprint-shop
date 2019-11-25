@@ -24,16 +24,28 @@
  *}
 <div id="js-product-list-header">
     {if $listing.pagination.items_shown_from == 1}
-        <div class="block-category card card-block">
-            <h1 class="h1">{$category.name}</h1>
-            {if $category.description}
-                <div id="category-description" class="text-muted">{$category.description nofilter}</div>
-            {/if}
-            {if $category.image.large.url}
-                <div class="category-cover">
-                    <img src="{$category.image.large.url}" alt="{if !empty($category.image.legend)}{$category.image.legend}{else}{$category.name}{/if}">
-                </div>
-            {/if}
+        <style type="text/css">
+            .block-category {
+                background-attachment: fixed;
+                background-image: url({$urls.base_url}img/c/{$category.id}.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            
+        </style>
+        <div class="block-category card card-block mt-1">
+            <div class="container">
+                <h1 class="h1">{$category.name}</h1>
+                {if $category.description}
+                    <div id="category-description" class="text-muted">{$category.description nofilter}</div>
+                {/if}
+                {* {if $category.image.large.url}
+                    <div class="category-cover">
+                        <img src="{$category.image.large.url}" alt="{if !empty($category.image.legend)}{$category.image.legend}{else}{$category.name}{/if}">
+                    </div>
+                {/if}  *}               
+            </div>
         </div>
     {/if}
 </div>
