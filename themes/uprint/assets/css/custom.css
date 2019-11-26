@@ -220,10 +220,11 @@ Carousel
 Categorías y Subcategorías
 **************************/
 #category .block-category {
+    border: none;
     -webkit-box-shadow: none;
             box-shadow: none;
-    border: none;
-    height: 25vw;
+    height: auto;
+    min-height: 25vw;
   }
 #category #products .pagination {
     margin-top: 0;
@@ -241,6 +242,24 @@ Categorías y Subcategorías
       font-size: calc(0.70233rem + 0.37209vw);
       margin-bottom: 12.8px;
       margin-bottom: .8rem;
+    }
+#category #subcategories .icon-cont a {
+          color: #f60;
+        }
+#category #subcategories .icon-cont a:hover {
+            color: #777;
+          }
+#category #subcategories .icon-cont img:hover{
+          opacity:.8;
+        }
+#category #subcategories .subcategories-cont {
+      display: grid;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      -ms-flex-line-pack: distribute;
+          align-content: space-around;
+      grid-template-columns: -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content;
+      grid-template-columns: max-content max-content max-content max-content;
     }
 /*****************************
 content-wrapper por secciones
