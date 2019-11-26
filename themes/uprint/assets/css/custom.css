@@ -659,6 +659,66 @@ Detalle productos
     padding: 12.8px 0;
     padding: .8rem 0;
   }
+.small {
+  font-size: 60%;
+}
+.desing-checkbox {
+  margin-top: 16px;
+  margin-top: 1rem;
+}
+.desing-checkbox .inputcont {
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+.desing-checkbox .inputcont input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.desing-checkbox .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+.desing-checkbox .radio-label {
+  background: transparent;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #777;
+  display: inline;
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 2px 10px;
+  padding: 2px 10px;
+  padding: 0.125rem 0.625rem;
+}
+.desing-checkbox .inputcont input:checked ~ .checkmark {
+  background-color: #ff6600;
+}
+.input-color:checked+span, .input-color:hover+span, .input-radio:checked+span, .input-radio:hover+span {
+  border: 2px solid #e0e0e0;
+}
+.desing-checkbox .control-label {
+  color: #ff6600;
+  font-size: larger;
+}
+.product-customization {
+  display: none;
+}
 /****************
 Ventajas
 ****************/
@@ -775,60 +835,4 @@ Mediaquery
   #search_block_top{
     display: none;
   }
-}
-.small {
-  font-size: 60%;
-}
-
-.desing-checkbox .inputcont {
-  display: block;
-  position: relative;
-  padding-left: 20px;
-  margin-bottom: 10px;
-  cursor: pointer;
-  font-size: 20px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-.desing-checkbox .inputcont input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-}
-.desing-checkbox .checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 20px;
-  width: 20px;
-  background-color: #eee;
-  border-radius: 50%;
-}
-.desing-checkbox .radio-label {
-  background: transparent;
-  border: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  color: #888;
-  display: inline;
-  font-size: .8rem;
-  font-weight: 600;
-  padding: 2px 10px;
-  padding: 0.125rem 0.625rem;
-}
-.desing-checkbox .inputcont input:checked ~ .checkmark {
-  background-color: #ff6600;
-}
-.input-color:checked+span, .input-color:hover+span, .input-radio:checked+span, .input-radio:hover+span {
-  border: 2px solid #e0e0e0;
-}
-
-.desing-checkbox .control-label {
-  color: #ff6600;
-  font-size: larger;
-}
-.product-customization {
-  display: none;
 }

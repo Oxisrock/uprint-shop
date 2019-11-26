@@ -162,14 +162,14 @@
               <label class="inputcont">
                 <input class="input-radio" name="desing" type="radio" id="desing_yes" checked="checked">
                 <span class="checkmark"></span>
-                <span class="radio-label">Si, quiero contratar el diseño con ustedes</span>
+                <span class="radio-label"><b>Si</b>, quiero contratar el diseño con ustedes.</span>
               </label>
             </li>
             <li class="input-container float-xs-left">
               <label class="inputcont">
                 <input class="input-radio" name="desing" type="radio" id="desing_no">
                 <span class="checkmark"></span>
-                <span class="radio-label">No, ya tengo el diseño</span>
+                <span class="radio-label"><b>No</b>, ya tengo el diseño.</span>
               </label>
             </li>
                   </ul>
