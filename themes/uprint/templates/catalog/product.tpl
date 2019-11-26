@@ -154,7 +154,27 @@
               {block name='product_variants'}
               {include file='catalog/_partials/product-variants.tpl'}
               {/block}
-
+              <div class="desing-checkbox">
+              <div class="clearfix ">
+              <span class="control-label">¿Te hacemos el diseño?</span>
+              <ul>
+                      <li class="input-container float-xs-left">
+              <label class="inputcont">
+                <input class="input-radio" name="desing" type="radio" id="desing_yes" checked="checked">
+                <span class="checkmark"></span>
+                <span class="radio-label">Si, quiero contratar el diseño con ustedes</span>
+              </label>
+            </li>
+            <li class="input-container float-xs-left">
+              <label class="inputcont">
+                <input class="input-radio" name="desing" type="radio" id="desing_no">
+                <span class="checkmark"></span>
+                <span class="radio-label">No, ya tengo el diseño</span>
+              </label>
+            </li>
+                  </ul>
+                  </div>
+          </div>
               {block name='product_pack'}
               {if $packItems}
               <section class="product-pack">
@@ -176,7 +196,7 @@
               {* Input to refresh product HTML removed, block kept for compatibility with themes *}
               {block name='product_refresh'}{/block}
               {/block}
-
+            </form>
             </div>
           </div>
 
@@ -194,7 +214,6 @@
           {/if}
           <button class="btn btn-success mb-1 btn-cart" style="width:100%;" id="add_cart_custom"><i class="fa fa-cart-plus fa-lg"></i>&nbsp;&nbsp;Añadir al Carrito</button>
           <img src="{$urls.base_url}img/03.JPG" class="img-fluid" style="width:100%;"> 
-        </form>
       </div>
       <div class="col-md-4">
       </div>
