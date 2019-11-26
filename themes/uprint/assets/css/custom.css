@@ -15,6 +15,9 @@ h1,h2,h3,h4,h5,h6 {
   font-family: 'Open Sans', sans-serif;
   font-weight: normal !important;
 }
+h1 {
+  color: #f60;
+}
 h1.page-heading {display: none;}
 h2.primary-color {
   font-size: calc(1.20465rem + 0.74419vw);
@@ -141,6 +144,9 @@ span.lead {
 strong.nobold {
   font-weight: 300;
 }
+.superh1 {
+  font-size: calc(1.45233rem + 0.37209vw);
+}
 #wrapper {
   background-color: #ffffff;
 }
@@ -210,19 +216,73 @@ Carousel
 .carousel-fade .carousel-control {
   z-index: 2;
 }
-/***************
+/**************************
 Categorías y Subcategorías
-***************/
-.block-category {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  border: none;
-  height: 25vw;
-}
-#products .pagination {
-  margin-top: 0;
-  margin-bottom: 0;
-}
+**************************/
+#category .block-category {
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    height: auto;
+    min-height: 25vw;
+  }
+#category #products .pagination {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+#category #category-description {
+    width: 600px;
+    max-width: 100%;
+    padding: 16px;
+    padding: 1rem;
+    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, .75);
+  }
+#category #category-description p {
+      font-size: calc(0.70233rem + 0.37209vw);
+      margin-bottom: 12.8px;
+      margin-bottom: .8rem;
+    }
+#category #subcategories .icon-cont a {
+          color: #f60;
+        }
+#category #subcategories .icon-cont a:hover {
+            color: #777;
+          }
+#category #subcategories .icon-cont img:hover{
+          opacity:.8;
+        }
+#category #subcategories .subcategories-cont {
+      display: grid;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      -ms-flex-line-pack: distribute;
+          align-content: space-around;
+      grid-template-columns: -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content;
+      grid-template-columns: max-content max-content max-content max-content;
+    }
+/*****************************
+content-wrapper por secciones
+*****************************/
+#best-sales #wrapper, #new-products #wrapper, #prices-drop #wrapper {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    margin: auto;
+    max-width: 100%;
+    padding-top: 41.008px;
+    padding-top: 2.563rem;
+    width: 1140px;
+  }
+#sitemap #content-wrapper {
+    width: 1140px;
+    max-width: 100%;
+    margin: auto;
+  }
+#stores #content-wrapper {
+    width: 1140px;
+    max-width: 100%;
+    margin: auto;
+  }
 /***************
 Header
 ***************/
@@ -621,6 +681,14 @@ Mediaquery
         font-size: 20.8px;
         font-size: 1.3rem;
     }
+    .superh1{
+        font-size: 28px;
+        font-size: 1.75rem;
+    }
+    #category #category-description p{
+        font-size: 16px;
+        font-size: 1rem;
+    }
     #header .header-top a[data-depth="0"]{
         font-size: 20px;
         font-size: 1.25rem;
@@ -654,6 +722,14 @@ Mediaquery
     .btn-cart{
         font-size: 17.6px;
         font-size: 1.1rem;
+    }
+    .superh1{
+        font-size: 24.8px;
+        font-size: 1.55rem;
+    }
+    #category #category-description p{
+        font-size: 12.8px;
+        font-size: .8rem;
     }
     #header .header-top a[data-depth="0"]{
         font-size: 17.6px;
