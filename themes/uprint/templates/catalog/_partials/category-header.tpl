@@ -35,8 +35,7 @@
             
         </style>
         <div class="block-category card card-block mt-1">
-            <div class="container">
-                <h1 class="h1">{$category.name}</h1>
+            <div class="container">                
                 {if $category.description}
                     <div id="category-description" class="text-muted">{$category.description nofilter}</div>
                 {/if}

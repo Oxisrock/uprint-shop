@@ -30,6 +30,7 @@
     {if $category.level_depth == 2}
       <div id="subcategories">
         <div class="container">
+          <h1 class="h1 superh1 mb-2">{$category.name}</h1>
           {* <p class="subcategory-heading">{l s='Subcategories'}</p> *}
           <div class="row clearfix">
             {foreach from=$subcategories item=subcategory}
