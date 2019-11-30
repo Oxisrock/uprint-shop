@@ -22,22 +22,35 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-
 {if $homeslider.slides}
   <div id="carousel" data-ride="carousel" class="carousel slide carousel-fade" data-interval="{$homeslider.speed}" data-wrap="{(string)$homeslider.wrap}" data-pause="{$homeslider.pause}">
+  <style type="text/css" media="screen">
+    
+  </style>
     <ul class="carousel-inner" role="listbox">
       {foreach from=$homeslider.slides item=slide name='homeslider'}
         <li class="carousel-item {if $smarty.foreach.homeslider.first}active{/if}" role="option" aria-hidden="{if $smarty.foreach.homeslider.first}false{else}true{/if}">
           <a href="{$slide.url}">
-            <figure>
+            <div class="slide-cont" style="background-image: url('{$slide.image_url}');">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <h2 class="text-uppercase">{$slide.title}</h2>
+                    <p class="">{$slide.description nofilter}</p>
+                    <a href="{$slide.url}" class="btn btn-info">Ver más &nbsp;<span class="fa fa-chevron-right"></span></a>
+                  </div>                  
+                </div>                
+              </div>
+            </div>
+            {* <figure>
               <img src="{$slide.image_url}" alt="{$slide.legend|escape}">
-              {if $slide.title || $slide.description}
-                <figcaption class="caption">
-                  <h2 class="display-1 text-uppercase">{$slide.title}</h2>
-                  <div class="caption-description">{$slide.description nofilter}</div>
-                </figcaption>
-              {/if}
-            </figure>
+                {if $slide.title || $slide.description}
+                  <figcaption class="caption">
+                    <h2 class="display-1 text-uppercase">{$slide.title}</h2>
+                    <div class="caption-description">{$slide.description nofilter}</div>                    
+                  </figcaption>
+                {/if}
+            </figure> *}
           </a>
         </li>
       {/foreach}

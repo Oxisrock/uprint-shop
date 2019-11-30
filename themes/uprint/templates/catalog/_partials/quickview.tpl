@@ -40,14 +40,14 @@
             <i class="material-icons arrow-up js-arrow-up">&#xE316;</i>
             <i class="material-icons arrow-down js-arrow-down">&#xE313;</i>
           </div>
+          {block name='product_description_short'}
+            <div id="product-description-short" itemprop="description">{$product.description_short nofilter}</div>
+          {/block}
         </div>
         <div class="col-md-6 col-sm-6">
           <h1 class="h1">{$product.name}</h1>
           {block name='product_prices'}
             {include file='catalog/_partials/product-prices.tpl'}
-          {/block}
-          {block name='product_description_short'}
-            <div id="product-description-short" itemprop="description">{$product.description_short nofilter}</div>
           {/block}
           {block name='product_buy'}
             <div class="product-actions">
